@@ -2,6 +2,8 @@ package com.sachin.springdemo.controllers;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,13 +22,17 @@ public class ProductContoller {
 	@Autowired
 	private ProductRepository productRepository;
 	
-	@GetMapping("/products/")
+	private static final Logger LOGGER = LoggerFactory.getLogger(ProductContoller.class);
+
+	
+	@GetMapping("/products")
 	public List<Product> getProducts() {
 		return productRepository.findAll();
 	}
 	
-	@GetMapping("/product/{id}")
+	@GetMapping("/products/{id}")
 	public Product getProduct(@PathVariable("id")int productId) {
+		LOGGER.info("finding product by id:"+productId);
 		return productRepository.findById(productId).get();
 	}
 	
@@ -40,7 +46,7 @@ public class ProductContoller {
 		return productRepository.save(product);
 	}
 	
-	@DeleteMapping("/product/{id}")
+	@DeleteMapping("/products/{id}")
 	public void deleteProduct(@PathVariable("id")int productId) {
 		productRepository.deleteById(productId);
 	}
