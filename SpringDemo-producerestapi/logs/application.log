@@ -1,0 +1,37 @@
+2026-04-30T17:12:46.376+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] .s.s.SpringDemoProducerestapiApplication : Starting SpringDemoProducerestapiApplication using Java 17.0.12 with PID 1411 (/Users/sachinsandbhor/git/SpringDemo/SpringDemo-producerestapi/target/classes started by sachinsandbhor in /Users/sachinsandbhor/git/SpringDemo/SpringDemo-producerestapi)
+2026-04-30T17:12:46.379+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] .s.s.SpringDemoProducerestapiApplication : No active profile set, falling back to 1 default profile: "default"
+2026-04-30T17:12:46.934+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-30T17:12:46.982+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-04-30T17:12:47.339+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-30T17:12:47.350+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-30T17:12:47.351+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-04-30T17:12:47.396+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 981 ms
+2026-04-30T17:12:47.526+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-30T17:12:47.772+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2416c658
+2026-04-30T17:12:47.774+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-30T17:12:47.796+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-30T17:12:47.832+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-04-30T17:12:48.151+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-30T17:12:48.288+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mydb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: mydb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-30T17:12:48.886+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-30T17:12:48.892+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-30T17:12:48.951+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-30T17:12:49.055+05:30  WARN 1411 --- [SpringDemo-producerestapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-30T17:12:49.390+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/productapi'
+2026-04-30T17:12:49.396+05:30  INFO 1411 --- [SpringDemo-producerestapi] [main] .s.s.SpringDemoProducerestapiApplication : Started SpringDemoProducerestapiApplication in 3.336 seconds (process running for 3.849)
+2026-04-30T17:13:01.158+05:30  INFO 1411 --- [SpringDemo-producerestapi] [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-30T17:13:01.158+05:30  INFO 1411 --- [SpringDemo-producerestapi] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-30T17:13:01.160+05:30  INFO 1411 --- [SpringDemo-producerestapi] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-30T17:13:01.219+05:30  INFO 1411 --- [SpringDemo-producerestapi] [http-nio-8080-exec-2] c.s.s.controllers.ProductContoller       : finding product by id:4
+2026-04-30T17:13:04.339+05:30  INFO 1411 --- [SpringDemo-producerestapi] [http-nio-8080-exec-3] c.s.s.controllers.ProductContoller       : finding product by id:1
